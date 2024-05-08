@@ -55,6 +55,18 @@ const combate = () => {
     const ataqueRival = parseInt(poke2Ataque.textContent);
     const ataquePropio = parseInt(pokeAtaque.textContent);
 
+    if (ataqueRival < ataquePropio) {
+        alert("Ganaste");
+    }
+    
+    if (ataqueRival === ataquePropio) {
+        alert("Empate");
+    }
+    
+    if (ataqueRival > ataquePropio) {
+        alert("Perdiste");
+    }
+
     console.log(ataquePropio);
 }
 
